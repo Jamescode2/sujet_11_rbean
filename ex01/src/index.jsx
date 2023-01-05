@@ -2,8 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import Preview from './Preview';
-import SelectBox from './SelectBox';
-
+import UserInput from './UserInput';
 
 
 class App extends React.Component {
@@ -20,7 +19,7 @@ class App extends React.Component {
         return (
             <div>
                 <Preview selectedValue={this.state.selectedValue} />
-                <SelectBox value={this.state.selectedValue} handleChange={this.handleChange} />
+                <UserInput value={this.state.selectedValue} handleChange={this.handleChange} />
             </div>
         )
     }
